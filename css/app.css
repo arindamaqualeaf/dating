@@ -6683,37 +6683,70 @@ a, button {
   text-shadow: none; }
 
 .input-1 {
-  background: rgba(255, 255, 255, 0.32);
+  background: none;
   border: none;
-  height: 30px;
+  height: 36px;
   font-size: 14px;
-  letter-spacing: .5px; }
+  letter-spacing: .5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0px;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  color: #fff; }
 
 .input-1::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #eeeded; }
+  color: #bbbbbb; }
 
 .input-1::-moz-placeholder {
   /* Firefox 19+ */
-  color: #eeeded; }
+  color: #bbbbbb; }
 
 .input-1:-ms-input-placeholder {
   /* IE 10+ */
-  color: #eeeded; }
+  color: #bbbbbb; }
 
 .input-1:-moz-placeholder {
   /* Firefox 18- */
-  color: #eeeded; }
+  color: #bbbbbb; }
 
 .input-1:focus {
-  background-color: rgba(255, 255, 255, 0.32);
+  background-color: transparent;
   outline: none;
-  box-shadow: 0 0px 9px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0 0px 9px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0 0px 9px rgba(0, 0, 0, 0.4);
-  -o-box-shadow: 0 0px 9px rgba(0, 0, 0, 0.4);
-  border: rgba(255, 255, 255, 0.6);
-  color: #ffffff; }
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  color: #ffffff;
+  border-bottom: 1px solid #fff; }
+
+.selectOpt-1 {
+  background-color: transparent;
+  border: none;
+  color: #bbbbbb;
+  border-radius: 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out; }
+
+.selectOpt-1:focus {
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  border-color: #fff;
+  color: #fff; }
+  .selectOpt-1:focus option {
+    color: #fff;
+    background: #333333; }
 
 .commonHeading {
   text-align: center;
@@ -6721,7 +6754,7 @@ a, button {
   .commonHeading p {
     font-weight: 600; }
   .commonHeading h2 {
-    font-family: "Engagement";
+    font-family: "Belle et Belle Personal Use";
     font-size: 42px;
     color: #fe7043; }
   .commonHeading .design {
@@ -6744,6 +6777,26 @@ a, button {
     width: 100px;
     height: 1px;
     background: #333333; }
+
+header {
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 1000ms ease-in-out;
+  -moz-transition: all 1000ms ease-in-out;
+  -ms-transition: all 1000ms ease-in-out;
+  -o-transition: all 1000ms ease-in-out;
+  transition: all 1000ms ease-in-out;
+  left: 0;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+  z-index: 9999999999;
+  background: #fff;
+  width: 100%; }
+
+header.sticky {
+  position: fixed; }
 
 .logo {
   width: 172px;
@@ -6791,11 +6844,15 @@ header {
   padding: 8px 0; }
 
 .bannerSection {
+  margin-top: 62px;
   background: url("../images/banner/1.jpg");
   height: 100vh;
   z-index: 999;
   -webkit-filter: grayscale(30%);
-  filter: grayscale(30%); }
+  filter: grayscale(30%);
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover; }
   .bannerSection .container {
     height: 100%; }
     .bannerSection .container .row {
@@ -6808,7 +6865,7 @@ header {
     top: 6px;
     right: 8px; }
   .bannerSection .select-wrapper input.select-dropdown {
-    color: #eeeded;
+    color: #bbbbbb;
     height: 30px;
     padding: 0 10px;
     border-radius: 5px;
@@ -6829,7 +6886,7 @@ header {
       font-size: 36px;
       color: #fe7043; }
       .signupForm .heading h2 span {
-        font-family: "Engagement"; }
+        font-family: "Belle et Belle Personal Use"; }
   .signupForm .form-group label {
     font-size: 16px;
     color: #ffffff;
@@ -7179,7 +7236,7 @@ header {
 
 .text-heading h2 {
   font-size: 50px;
-  font-family: "Engagement";
+  font-family: "Belle et Belle Personal Use";
   color: #fff; }
 
 footer {

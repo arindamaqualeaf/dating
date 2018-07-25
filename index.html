@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dating</title>
-    <link rel="stylesheet" href="css/mdb.min.css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"> -->
     <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/app.css">
@@ -67,7 +65,7 @@
                         <div class="col-md-6 col-sm-12 col-xs-12">
                             <div class="form-group">
                                 <label>I am</label>
-                                <select class="mdb-select">
+                                <select class="form-control selectOpt-1">
                                     <option value="">Select..</option>
                                     <option value="1">Man</option>
                                     <option value="2">Woman</option>
@@ -77,7 +75,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Seeking a</label>
-                                <select class="mdb-select">
+                                <select class="form-control selectOpt-1">
                                     <option value="">Select..</option>
                                     <option value="1">Man</option>
                                     <option value="2">Woman</option>
@@ -478,6 +476,43 @@
         $('.bg-holder').parallaxScroll({
             friction: 0.5
         });
+    </script>
+    <script>
+        var width = window.innerHeight;
+        var header= $("header").height();
+        var maxHeight= header + width + 100;
+        var bodyHeight = $(document).height();
+        var h=document.documentElement.scrollHeight;
+        console.log(h);
+
+        console.log(bodyHeight);
+        console.log(maxHeight);
+        if(bodyHeight>=maxHeight){
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >150){  
+                $('header').addClass("sticky");
+            }
+            else{
+                $('header').removeClass("sticky");
+            }
+            });
+        } 
+
+        var width = window.innerHeight;
+        var header= $("header").height();
+        var maxHeight= header + width + 100;
+        var bodyHeight = $(document).height();
+        //var h=document.documentElement.scrollHeight;
+        if(bodyHeight>=maxHeight){
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >150){  
+                $('header').addClass("sticky");
+            }
+            else{
+                $('header').removeClass("sticky");
+            }
+            });
+        } 
     </script>
 </body>
 

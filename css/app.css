@@ -6725,6 +6725,9 @@ a, button {
 
 .selectOpt-1 {
   background-color: transparent;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   border: none;
   color: #bbbbbb;
   border-radius: 0px;
@@ -7171,16 +7174,17 @@ header {
   background-position: center center;
   background-attachment: fixed;
   position: relative;
-  padding: 90px 0;
+  padding: 40px 0 80px;
   z-index: 1;
   text-align: center;
   margin-top: 40px; }
   .textimonial .textInfo {
     color: #fff;
-    margin-top: 20px; }
+    margin-top: 20px;
+    font-size: 18px; }
   .textimonial .authorName {
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 700;
     text-transform: uppercase;
     color: #cc0229; }
   .textimonial .owl-dots {
@@ -7189,11 +7193,9 @@ header {
     left: 50%;
     transform: translateX(-50%); }
     .textimonial .owl-dots button {
-      height: 50px;
-      width: 50px; }
+      height: 30px;
+      width: 30px; }
     .textimonial .owl-dots span {
-      width: 36px;
-      height: 36px;
       display: block;
       position: relative; }
     .textimonial .owl-dots .active span::after {
@@ -7201,7 +7203,7 @@ header {
     .textimonial .owl-dots span::after {
       content: "\f004";
       font-family: 'FontAwesome';
-      font-size: 28px;
+      font-size: 20px;
       color: #c2cfd7;
       display: block; }
 
